@@ -29,7 +29,7 @@ from .models import LeadManagement
 
 class LMSView(viewsets.ViewSet):
     def create(self, request):
-        if not check_time():
+        if check_time():
             return Response(
                 {"message": "sorry you can not upload to server by this time"},
                 status=status.HTTP_400_BAD_REQUEST,
