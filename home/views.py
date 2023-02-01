@@ -36,7 +36,7 @@ class LMSView(viewsets.ViewSet):
             )
         data = request.FILES.get("file")
         data = base64.b64encode(data.read()).decode("utf-8")
-        task = read_csv_data(data)
+        task = read_csv_data.delay(data)
         return Response(
             {
                 "status": task.status,

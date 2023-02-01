@@ -10,6 +10,7 @@ from .parser import load_csv
 
 
 
+@shared_task
 def read_csv_data(csv_file):
     csv_file = base64.b64decode(csv_file)
     bo_data = BytesIO(csv_file)

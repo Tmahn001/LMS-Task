@@ -85,9 +85,9 @@ DATABASES = {
 'ENGINE': 'django.db.backends.postgresql',
 'NAME': 'railway',
 'USER': 'postgres',
-'PASSWORD': 'lIplxr7b7BxPex4d7GAZ',
-'HOST': 'containers-us-west-55.railway.app',
-'PORT':'6826',
+'PASSWORD': 'pG36PqKwXloH60RJ2QpT',
+'HOST': 'containers-us-west-133.railway.app',
+'PORT':'6407',
 }
 }
 
@@ -137,12 +137,12 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-BROKER_URL = 'redis://localhost:6379'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_BROKER_URL = 'redis://default:UwDM4kBqMcMbSamkQx2R@containers-us-west-123.railway.app:6488'
+CELERY_RESULT_BACKEND = 'redis://default:UwDM4kBqMcMbSamkQx2R@containers-us-west-123.railway.app:6488'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
-CELERY_TIMEZONE = 'Africa/Lagos'
+
 
 UPLOAD_START_HOUR =  9
 UPLOAD_END_HOUR =  18
