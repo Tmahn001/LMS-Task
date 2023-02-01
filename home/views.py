@@ -27,7 +27,7 @@ from rest_framework.response import Response
 from .models import LeadManagement
 
 
-class LeadsManagementViewSet(viewsets.ViewSet):
+class LMSView(viewsets.ViewSet):
     def create(self, request):
         if not check_time():
             return Response(

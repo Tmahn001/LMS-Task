@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from home.views import LeadsManagementViewSet
+from home.views import LMSView
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter(trailing_slash=False)
-router.register(r"leads", LeadsManagementViewSet, basename="leadsystem")
+router.register(r"leads", LMSView, basename="leadsystem")
 
 resources_loader = router.urls
 
