@@ -7,7 +7,7 @@ import uuid
 # Create your models here.
 status_data = (('Open', 'Open'), ('Pending', 'Pending'), ('Completed', 'Completed'))
 class LeadManagement(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    id=models.UUIDField(default=uuid.uuid4, primary_key=True)
     name = models.CharField(max_length=125)
     mobile_number = models.CharField(max_length=50, null=True)
     status = models.CharField(max_length=100, choices=status_data)
