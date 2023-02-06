@@ -13,3 +13,8 @@ class FileUploadSerializer(serializers.Serializer):
 
     class Meta:
         fields = ("file",)
+        
+class LeadOutputSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LeadManagement
+        fields = '__all__'
