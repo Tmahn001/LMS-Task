@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
-    'celery'
+    'celery',
     'corsheaders'
 
 ]
