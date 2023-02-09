@@ -1,3 +1,3 @@
-gunicorn LMS.wsgi:application
+web: gunicorn LMS.wsgi:application
 
 
