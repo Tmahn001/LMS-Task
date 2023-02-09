@@ -31,11 +31,7 @@ from .models import LeadManagement
 
 class LMSView(viewsets.ViewSet):
     def create(self, request):
-        if check_time():
-            return Response(
-                {"message": "sorry you can not upload to server by this time"},
-                status=status.HTTP_400_BAD_REQUEST,
-            )
+        
         data = request.FILES.get("file")
         data = base64.b64encode(data.read()).decode("utf-8")
         task = read_csv_data.delay(data)
