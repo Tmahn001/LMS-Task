@@ -139,8 +139,8 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CELERY_BROKER_URL = 'redis://default:iFxSQrRQa4WzcBOucCTt@containers-us-west-19.railway.app:7746'
-CELERY_RESULT_BACKEND = 'redis://default:iFxSQrRQa4WzcBOucCTt@containers-us-west-19.railway.app:7746'
+CELERY_BROKER_URL = 'redis://red-cfhqfgo2i3murcbbcb40:6379'
+CELERY_RESULT_BACKEND = 'redis://red-cfhqfgo2i3murcbbcb40:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
