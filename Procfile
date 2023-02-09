@@ -1,3 +1,3 @@
-gunicorn LMS-Task.wsgi:application
+gunicorn LMS.wsgi:application
 
 
