@@ -1,2 +1,2 @@
-gunicorn LMS.wsgi:application
-celery -A LMS worker --loglevel=info -P eventlet
+web: gunicorn LMS.wsgi:application
+worker: celery -A LMS worker --loglevel=info -P eventlet
