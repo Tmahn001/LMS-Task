@@ -1,2 +1,2 @@
-web: sh script.sh
+sh script.sh
 
